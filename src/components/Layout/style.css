@@ -2,4 +2,25 @@
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+    min-width: 100%;
+}
+
+.sidebar{
+    width: 27%;
+}
+
+.maindiv{
+    width: 70%;
+}
+
+@media (max-width: 400px){
+    .container{
+         flex-direction: column;
+      }
+     .sidebar{
+         width: 100%
+     }
+     .maindiv{
+         width: 100%;
+     }
 }

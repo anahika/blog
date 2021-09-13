@@ -6,7 +6,7 @@
 
 .headerMenu a{
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
     color: #565673;
     font-size: 12px;
@@ -15,3 +15,29 @@
 .headerMenu a:hover{
     color: #5f9ea0;
 }
+
+  a.social {
+    margin: 0.4rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+
+a.social:hover {
+    transform: translateY(-2px);
+  }
+
+  a.youtube {
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    color: #4968ad;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+  }
+  
+  a.instagram {
+    color: black;
+  }

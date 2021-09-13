@@ -27,7 +27,6 @@ const BlogPost = (props) => {
     if(post.blogImage == "") return null;
 
   return(
-        <div className="blogPostContainer">
             <Card>
                 <div className="blogHeader">
   <span className="blogCategory">{post.blogCategory}</span>
@@ -46,7 +45,6 @@ const BlogPost = (props) => {
                 </div>
                 
             </Card>
-        </div>
    )
 
  }

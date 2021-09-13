@@ -4,6 +4,15 @@ import Card from '../ui';
 import blogPost from '../../data/blog.json';
 import { NavLink } from 'react-router-dom';
 import pic from '../../assets/brother.jpg'
+import resume from '../../assets/resume.pdf'
+import {
+    faYoutube,
+    faFacebook,
+    faTwitter,
+    faInstagram
+  } from "@fortawesome/free-brands-svg-icons";
+  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  
 
 const Sidebar = (props) => {
 
@@ -18,7 +27,7 @@ const Sidebar = (props) => {
 
 
   return(
-      <div className="sidebarContainer" style={{
+      <div style={{
           width: props.width
       }}>
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
@@ -29,13 +38,38 @@ const Sidebar = (props) => {
                     <img src={pic} alt="" />
                 </div>
                 <div className="cardBody">
-                    <p className="personalBio">My name is Saksham Hadokar I am a content writer.</p>
+                    <h3>Saksham Hadokar</h3>
+                    <p className="personalBio">
+                    Talented, versatile, and proficient in writing. I may not have any professional experience,but every experience needs a start.<br></br><br></br>
+                    <a href={resume} target="_blank">Click here</a> for my resume.
+                    </p>
                 </div>
             </Card>
 
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
-                    <span>Social Network</span>
+                <div>
+                    <a href="#"
+                        target="_blank"
+                        className="youtube social">
+                        <FontAwesomeIcon icon={faYoutube} size="2x" />
+                    </a>
+                    <a href="#"
+                        className="facebook social"
+                        target="_blank">
+                        <FontAwesomeIcon icon={faFacebook} size="2x" />
+                    </a>
+                    <a href="#"
+                          className="twitter social"
+                          target="_blank">
+                        <FontAwesomeIcon icon={faTwitter} size="2x" />
+                    </a>
+                    <a href="#"
+                        className="instagram social"
+                        target="_blank">
+                        <FontAwesomeIcon icon={faInstagram} size="2x" />
+                    </a>
+                </div>
                 </div>
             </Card>
 

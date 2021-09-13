@@ -1,17 +1,44 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './style.css';
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = (props) => {
   return(
     <header className="header">
         <nav className="headerMenu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about-us">About Us</NavLink>
+            <NavLink to="/contact-us">Contact Us</NavLink>
         </nav>
         <div>
-            socila Media links
-        </div>
+          <a href="#"
+            className="youtube social"
+            target="_blank">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a href="#"
+            className="facebook social"
+            target="_blank">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="#" 
+             className="twitter social"
+             target="_blank">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="#"
+            className="instagram social"
+            target="_blank">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+    </div>
     </header>
    )
 

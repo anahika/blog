@@ -20,25 +20,3 @@
     color: #565673;
     padding: 0 10px;
 }
-.search form{
-    display: flex;
-    margin: 0 10px;
-}
-
-.searchInput{
-    border: 0;
-    width: 0;
-    transition: width 0.1s ease-in;
-}
-
-.searchInput.active{
-    width: 150px;
-}
-
-.searchInput:focus{
-    outline: none;
-}
-
-.searchIcon{
-    cursor: pointer;
-}
