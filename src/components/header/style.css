@@ -17,7 +17,6 @@
 }
 
   a.social {
-    margin: 0.4rem;
     transition: transform 250ms;
     display: inline-block;
   }
@@ -40,4 +39,10 @@ a.social:hover {
   
   a.instagram {
     color: black;
+  }
+
+  @media (max-width: 400px){
+    a.social{
+      margin: 0.3rem;
+    }
   }

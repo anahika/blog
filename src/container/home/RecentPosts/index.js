@@ -16,7 +16,7 @@ const RecentPosts = (props) => {
                 <span>Sports Update</span>
                 <h2 className='mt-4'>Cristiano Ronaldo JOINS UNITED!</h2>
                 <span>posted on September 09,2021 by Saksham Hadokar</span>
-                <p className='mt-4'>The Story begins where it all started 12 years ago, Cristiano Ronaldo reached an agreement with Manchester United 12 years after he left Old Trafford for Real Madrid. Where it all started from the rumors-Cristiano to City...</p>
+                <p className='m-4'>The Story begins where it all started 12 years ago, Cristiano Ronaldo reached an agreement with Manchester United 12 years after he left Old Trafford for Real Madrid. Where it all started from the rumors-Cristiano to City...</p>
 
                 <Link to='/post/Cristiano-Ronaldo-JOINS-UNITED!' className='btn btn-dark mt-3'>Read More</Link>     
 

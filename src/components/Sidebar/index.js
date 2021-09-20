@@ -4,7 +4,7 @@ import Card from '../ui';
 import blogPost from '../../data/blog.json';
 import { NavLink } from 'react-router-dom';
 import pic from '../../assets/brother.jpg'
-import resume from '../../assets/resume.pdf'
+
 import {
     faYoutube,
     faFacebook,
@@ -32,7 +32,7 @@ const Sidebar = (props) => {
       }}>
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
-                    <span>About Us</span>
+                    <span>About Me</span>
                 </div>
                 <div className="profileImageContainer">
                     <img src={pic} alt="" />
@@ -41,7 +41,7 @@ const Sidebar = (props) => {
                     <h3>Saksham Hadokar</h3>
                     <p className="personalBio">
                     Talented, versatile, and proficient in writing. I may not have any professional experience,but every experience needs a start.<br></br><br></br>
-                    <a href={resume} target="_blank">Click here</a> for my resume.
+                    <button className="btn btn-primary" style={{width:'100%'}}><i className="fa fa-download"></i> Download Resume</button>
                     </p>
                 </div>
             </Card>
