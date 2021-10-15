@@ -1,0 +1,34 @@
+.cardcss{
+        word-wrap: normal;
+        min-width: 180px;
+        margin: 0 10px 40px 10px;
+        transition: all 0.3s ease-in-out;
+        height: 90%;
+        width: auto;
+}
+
+.cardcss:hover {
+    transform: scale(1.1);
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: indianred;
+  text-decoration: none;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.card-text{
+    color: black;
+}
+
+.card-img-div{
+    height: 200px;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}

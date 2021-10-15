@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import Card from '../ui';
 import blogPost from '../../data/blog.json';
+import Layout from '../Layout';
 
 const BlogPost = (props) => {
 
@@ -14,24 +15,22 @@ const BlogPost = (props) => {
         blogImage: "" ,
         blogText: ""
     });
-    const [slug, setSlug] = useState('');
-    
     
     useEffect(() => {
-        const slug = props.match.params.slug;
-        const post = blogPost.data.find(post => post.slug == slug);
+        const id = props.match.params.id;
+        const post = blogPost.data.find(post => post.slug == id);
         setPost(post);
-        setSlug(slug)
-    }, [post, props.match.params.slug]);
+    }, [post, props.match.params.id]);
 
     if(post.blogImage == "") return null;
 
   return(
+            <Layout>
             <Card>
                 <div className="blogHeader">
-  <span className="blogCategory">{post.blogCategory}</span>
+                     <span className="blogCategory">{post.blogCategory}</span>
                     <h1 className="postTitle">{post.blogTitle}</h1>
-  <span className="postedBy">posted on {post.postedOn} by {post.author}</span>
+                     <span className="postedBy">posted on {post.postedOn} by {post.author}</span>
                 </div>
 
                 <div className="postImageContainer">
@@ -40,11 +39,12 @@ const BlogPost = (props) => {
                 </div>
 
                 <div className="postContent">
-  <h3>{post.blogTitle}</h3>
-  <p>{post.blogText}</p>
+                    <h3>{post.blogTitle}</h3>
+                    <p>{post.blogText}</p>
                 </div>
                 
             </Card>
+            </Layout>
    )
 
  }

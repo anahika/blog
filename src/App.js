@@ -7,6 +7,7 @@ import Hero from './components/hero';
 import ContactUS from './container/ContactUS';
 import Post from './container/Post';
 import AboutUS from './container/AboutUS'
+import BlogPost from './components/BlogPost';
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       <Header />
       <Hero /> 
 
-       <Route path="/" exact component={Home} />
-       <Route path="/contact-us"  component={ContactUS}/>
-       <Route path="/post/:slug" component={Post} /> 
-       <Route path="/about-us" component={AboutUS} /> 
+       <Route exact path="/" exact component={Home} />
+       <Route exact path="/contact-us/"  component={ContactUS}/>
+       <Route exact path="/post" component={Post} /> 
+       <Route exact path="/post/:id" component={BlogPost} /> 
+       <Route exact path="/about-us" component={AboutUS} /> 
       
     </div>
   </Router>

@@ -7,8 +7,17 @@ import Footer from '../../components/Footer'
 function AboutUS() {
     return (
         <div>
-            <div className='mt-5 about1'>
-                <h1 className='typewriter'>LISTEN LEARN GROW</h1>
+            <div className='mt-5 collage d-flex justify-content-center align-items-center'>
+                  
+                  <div class="card text-center" style={{backgroundColor:'transparent'}}>
+                    <div class="card-header">
+                       <h1>TRAVEL</h1>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">"I don't know where I'm going, but I'm on my way."</h5>
+                        <a href="#" class="btn btn-primary mt-5">Let's Explore</a>
+                    </div>
+                    </div>
             </div>
             <div className='row mt-5' style={{textAlign: 'center'}}>
                   <div className='col col-md-4 col-md-push-8' style={{maxWidth: '12.5rem'}}>

@@ -16,7 +16,7 @@
     display: block;
     font-size: 20px;
     text-transform: capitalize;
-    font-weight: 400;
-    color: #565673;
+    font-weight: bold;
+    color: rgb(46, 40, 40);
     padding: 0 10px;
 }
