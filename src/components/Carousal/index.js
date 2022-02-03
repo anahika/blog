@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 import './style.css'
 
 function Carousal() {
+
     return (
-             <Carousel autoPlay='true' infiniteLoop='true' showThumbs='false' showStatus='false'>
+             <Carousel autoPlay='true' infiniteLoop='true' showThumbs={false} showStatus='false'>
              <Card style={{marginBottom: '20px', paddingBottom:'20px'}}>
                     <div className="postImageWrapper1">
                         <img src='/blogPostImages/1.png' alt=""/>

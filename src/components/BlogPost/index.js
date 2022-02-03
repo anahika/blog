@@ -18,11 +18,11 @@ const BlogPost = (props) => {
     
     useEffect(() => {
         const id = props.match.params.id;
-        const post = blogPost.data.find(post => post.slug == id);
+        const post = blogPost.data.find(post => post.slug === id);
         setPost(post);
     }, [post, props.match.params.id]);
 
-    if(post.blogImage == "") return null;
+    if(post.blogImage === "") return null;
 
   return(
             <Layout>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import Card from '../ui';
 import blogPost from '../../data/blog.json';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import pic from '../../assets/brother.jpg'
 
 import {
@@ -41,7 +41,7 @@ const Sidebar = (props) => {
                     <h3>Saksham Hadokar</h3>
                     <p className="personalBio">
                     Talented, versatile, and proficient in writing. I may not have any professional experience,but every experience needs a start.<br></br><br></br>
-                    <button className="btn btn-primary" style={{width:'100%'}}><i className="fa fa-download"></i> Download Resume</button>
+                    <Link to="/blogPostImages/resume.pdf" download target="_blank" className="btn btn-primary" style={{width:'100%'}}><i className="fa fa-download"></i> Download Resume</Link>
                     </p>
                 </div>
             </Card>

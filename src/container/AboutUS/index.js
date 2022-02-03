@@ -9,13 +9,13 @@ function AboutUS() {
         <div>
             <div className='mt-5 collage d-flex justify-content-center align-items-center'>
                   
-                  <div class="card text-center" style={{backgroundColor:'transparent'}}>
-                    <div class="card-header">
+                  <div className="card text-center" style={{backgroundColor:'transparent'}}>
+                    <div className="card-header">
                        <h1>TRAVEL</h1>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">"I don't know where I'm going, but I'm on my way."</h5>
-                        <a href="#" class="btn btn-primary mt-5">Let's Explore</a>
+                    <div className="card-body">
+                        <h5 className="card-title">"I don't know where I'm going, but I'm on my way."</h5>
+                        <a href="#" className="btn btn-primary mt-5">Let's Explore</a>
                     </div>
                     </div>
             </div>
@@ -50,9 +50,14 @@ function AboutUS() {
                     <a ><img className='team-img' src={dp}></img></a>
                 </div>
                 <div className='col-12 col-md-6'>
-                      <p className='para' style={{textAlign:'right'}}>hey this is anshika nice to meet you guys 
-                      hey this is anshika nice to meet you guys font-size: 1.125rem; line-height: 1.8; Meera is the UK editor of Adventure.com and based in London. It was her first solo trip in 2004, a four-month adventure around Southeast Asia, which kickstarted her life as a freelance travel writer, and she has written for publications such as Rough Guides, the Guardian, National Geographic Traveller, Telegraph, Travel Weekly and Bloomberg, and co-authored her first guidebook, the 2017 Rough Guide to Cambodia. Her passion for adventure travel has seen her spend two months at a game lodge in South Africa, sail aboard a cargo passenger ship in French Polynesia and feed endangered bear cats in Cambodia. But no matter how itchy the feet, they always bring her home to her beloved London. Full Bio
-</p>
+		              <p className='para' style={{textAlign:'right'}}>Hello I'm Anshika Kapoor    from Palampur.<br/>
+	Currently I'm pursuing my B.tech from nit Hamirpur.
+	I am in final year of my B.tech program in Computer Science and Engineering and will be graduating in may 2022.<br/> 
+	I'm well versed with the technologies like c++ and react.
+	I did few projects during my b.tech based on these technologies. You can check them on my github.
+	Also I did couple of internships where I worked as front-end web developer.<br/> 
+	I like playing basketball and have been part of my college basketball team for last 3 years
+	</p>
                 </div>
 
             </div>
