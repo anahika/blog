@@ -1,13 +1,12 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
 const Card = (props) => {
-  return(
+  return (
     <div className="card" {...props}>
-        {props.children}
+      {props.children}
     </div>
-   )
+  );
+};
 
- }
-
-export default Card
+export default Card;

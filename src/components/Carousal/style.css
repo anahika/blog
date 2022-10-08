@@ -1,16 +1,16 @@
-img{
-    min-width:100%;
+img {
+  min-width: 100%;
 }
 
 .dot {
-     visibility: hidden;
+  visibility: hidden;
 }
 
-.postImageWrapper1{
-    width:400px;
-    height:400px;    
-    overflow:hidden;
-    display: flex;
-    align-items: center;
-    margin: auto;
+.postImageWrapper1 {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: auto;
 }

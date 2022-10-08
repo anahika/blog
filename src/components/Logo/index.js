@@ -1,13 +1,13 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./style.css";
 
 const Logo = (props) => {
-  return(
+  return (
     <div className="logo">
-        <a href="#">Saksham Hadokar</a>
+      <Link to="/">Saksham Hadokar</Link>
     </div>
-   )
+  );
+};
 
- }
-
-export default Logo
+export default Logo;
