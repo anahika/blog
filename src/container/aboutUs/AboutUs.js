@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
+import "./AboutUs.css";
 import dp from "../../assets/dp.jpg";
 import dp1 from "../../assets/brother.jpg";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/Footer";
 
-function AboutUS() {
+function AboutUs() {
   return (
     <div>
       <div className="mt-5 collage d-flex justify-content-center align-items-center">
@@ -93,4 +93,4 @@ function AboutUS() {
   );
 }
 
-export default AboutUS;
+export default AboutUs;

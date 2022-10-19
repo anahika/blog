@@ -1,17 +1,15 @@
 import React from "react";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import { Link } from "react-router-dom";
-import "./style.css";
+import "./Post.css";
 
 const Post = (props) => {
-  console.log(props);
-
   return (
     <Layout>
       <div className="row mt-5 ">
         <div className="col-sm-6">
           <Link
-            to="/post/Cristiano-Ronaldo-JOINS-UNITED!"
+            to="/post/Cristiano-Ronaldo-completes-stunning-Manchester-United-return"
             className="custom-card"
           >
             <div className="card cardcss">

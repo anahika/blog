@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
-import RecentPosts from "./RecentPosts";
-import Layout from "../../components/Layout";
-import Carousal from "../../components/Carousal";
+import "./Home.css";
+import RecentPosts from "./recentPosts/RecentPosts";
+import Layout from "../../components/layout/Layout";
+import Carousal from "../../components/carousal/Carousel";
 
 const Home = (props) => {
   return (

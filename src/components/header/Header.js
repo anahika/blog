@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./style.css";
+import "./Header.css";
 import {
   faYoutube,
   faFacebook,
@@ -30,6 +30,7 @@ const Header = (props) => {
         <a
           href="https://instagram.com/thymistyroom?igshid=YmMyMTA2M2Y="
           className="instagram social"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <FontAwesomeIcon icon={faInstagram} />

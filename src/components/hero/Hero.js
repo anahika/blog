@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../ui";
-import Logo from "../Logo";
+import Logo from "../logo/Logo";
 import bg from "../../assets/bg.jpg";
 
 const Hero = (props) => {

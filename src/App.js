@@ -1,13 +1,13 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./container/home";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import ContactUS from "./container/ContactUS";
-import Post from "./container/Post";
-import AboutUS from "./container/AboutUS";
-import BlogPost from "./components/BlogPost";
+import Home from "./container/home/Home";
+import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
+import ContactUS from "./container/contactUs/ContactUs";
+import Post from "./container/post/Post";
+import AboutUS from "./container/aboutUs/AboutUs";
+import BlogPost from "./components/blogPost/BlogPost";
 
 function App() {
   return (

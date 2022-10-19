@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import Card from "../ui";
 import { Link } from "react-router-dom";
-import "./style.css";
+import "./Carousel.css";
 
 function Carousal() {
   return (

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
+import "./BlogPost.css";
 import Card from "../ui";
 import blogPost from "../../data/blog.json";
-import Layout from "../Layout";
+import Layout from "../layout/Layout";
 
 const BlogPost = (props) => {
   const [post, setPost] = useState({

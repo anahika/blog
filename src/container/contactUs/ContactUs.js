@@ -2,11 +2,11 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-import Layout from "../../components/Layout";
-import "./style.css";
-import Carousal from "../../components/Carousal";
+import Layout from "../../components/layout/Layout";
+import "./ContactUs.css";
+import Carousal from "../../components/carousal/Carousel";
 
-const ContactUS = () => {
+const ContactUs = () => {
   const {
     register,
     handleSubmit,
@@ -178,4 +178,4 @@ const ContactUS = () => {
   );
 };
 
-export default ContactUS;
+export default ContactUs;

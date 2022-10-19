@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
+import "./Sidebar.css";
 import Card from "../ui";
 import blogPost from "../../data/blog.json";
 import { NavLink, Link } from "react-router-dom";
@@ -68,19 +68,35 @@ const Sidebar = (props) => {
       >
         <div className="cardHeader">
           <div>
-            <a href="/" target="_blank" className="youtube social">
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="youtube social"
+            >
               <FontAwesomeIcon icon={faYoutube} size="2x" />
             </a>
-            <a href="/" className="facebook social" target="_blank">
+            <a
+              href="/"
+              className="facebook social"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
-            <a href="/" className="twitter social" target="_blank">
+            <a
+              href="/"
+              className="twitter social"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faTwitter} size="2x" />
             </a>
             <a
               href="https://www.instagram.com/thymistyroom/?igshid=YmMyMTA2M2Y%3D"
               className="instagram social"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
