@@ -7,6 +7,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -28,13 +29,16 @@ function Footer() {
               <h4> Navigate</h4>
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="/about-us">About Us</a>
+                  <Link to="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <a href="/contact-us">Contact Us</a>
+                  <Link to="/post">Posts</Link>
+                </li>
+                <li>
+                  <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -83,7 +87,12 @@ function Footer() {
                   size="2x"
                 />
               </a>
-              <a href="/" className="social" target="_blank">
+              <a
+                href="https://instagram.com/thymistyroom?igshid=YmMyMTA2M2Y="
+                className="social"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   className="icon-class"
                   icon={faInstagram}

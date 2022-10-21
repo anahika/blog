@@ -16,7 +16,7 @@ const Post = (props) => {
               <div className="card-img-div">
                 <img
                   className="card-img-top profileImageContainer"
-                  src="/blogPostImages/ronaldo.png"
+                  src="/blogPostImages/ronaldo.jpg"
                   alt="Card cap"
                 />
               </div>
