@@ -15,7 +15,11 @@ function Carousal() {
     >
       <Card style={{ marginBottom: "20px", paddingBottom: "20px" }}>
         <div className="postImageWrapper1">
-          <img src="/blogPostImages/1.png" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/blog-e5e5f.appspot.com/o/1.png?alt=media&token=00885206-fa89-486d-8cea-961b6305529b"
+            alt=""
+            className="img1"
+          />
         </div>
 
         <div className="mt-3" style={{ textAlign: "center" }}>
@@ -39,7 +43,11 @@ function Carousal() {
 
       <Card style={{ marginBottom: "20px", paddingBottom: "20px" }}>
         <div className="postImageWrapper1">
-          <img src="/blogPostImages/2.png" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/blog-e5e5f.appspot.com/o/2.png?alt=media&token=2b266c88-4f7f-47b7-b9b7-7d1aebaa90f1"
+            alt=""
+            className="img1"
+          />
         </div>
 
         <div className="mt-3" style={{ textAlign: "center" }}>
@@ -60,7 +68,11 @@ function Carousal() {
 
       <Card style={{ marginBottom: "20px", padding: "20px" }}>
         <div className="postImageWrapper1">
-          <img src="/blogPostImages/3.png" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/blog-e5e5f.appspot.com/o/3.png?alt=media&token=62de643f-1a69-4853-8313-ee8e2ed47e4b"
+            alt=""
+            className="img1"
+          />
         </div>
 
         <div className="mt-3" style={{ textAlign: "center" }}>
@@ -83,7 +95,11 @@ function Carousal() {
       </Card>
       <Card style={{ marginBottom: "20px", padding: "20px" }}>
         <div className="postImageWrapper1">
-          <img src="/blogPostImages/4.png" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/blog-e5e5f.appspot.com/o/4.png?alt=media&token=3339b6bd-66a8-41a0-8a8d-c2acf1d882b9"
+            alt=""
+            className="img1"
+          />
         </div>
 
         <div className="mt-3" style={{ textAlign: "center" }}>

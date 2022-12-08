@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors")
 require("dotenv").config();
 require("express-async-errors");
 const morgan = require("morgan");
@@ -12,6 +13,7 @@ const router = require('./routers/post');
 
 ConnectDB();
 app.use(express.json());
+app.use(cors({origin:"http://localhost:3000"}))
 
 app.use(morgan("dev"));
 app.use('/api/blog', router);

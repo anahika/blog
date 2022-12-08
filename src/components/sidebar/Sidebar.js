@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Sidebar.css";
 import Card from "../ui";
-import blogPost from "../../data/blog.json";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import pic from "../../assets/brother.jpg";
 
 import {
@@ -14,12 +13,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Sidebar = (props) => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    const posts = blogPost.data;
-    setPosts(posts);
-  }, [posts]);
+  const posts = props.blogs;
 
   return (
     <div
@@ -47,7 +41,7 @@ const Sidebar = (props) => {
             professional experience,but every experience needs a start.<br></br>
             <br></br>
             <Link
-              to="/blogPostImages/resume.pdf"
+              to="https://firebasestorage.googleapis.com/v0/b/blog-e5e5f.appspot.com/o/resume.pdf?alt=media&token=b19ee55c-fb54-4da2-ba83-efb92cf599d8"
               download
               target="_blank"
               className="btn btn-primary"
@@ -107,6 +101,17 @@ const Sidebar = (props) => {
       <Card
         style={{
           marginBottom: "20px",
+          boxSizing: "border-box",
+        }}
+      >
+        <Link to="/add" className="btn btn-secondary">
+          Add Blog
+        </Link>
+      </Card>
+
+      <Card
+        style={{
+          marginBottom: "20px",
           padding: "20px",
           boxSizing: "border-box",
         }}
@@ -116,14 +121,14 @@ const Sidebar = (props) => {
         </div>
 
         <div className="recentPosts">
-          {posts.map((post) => {
+          {posts.slice(0, 5).map((post, index) => {
             return (
-              <NavLink key={post.id} to={`/post/${post.slug}`}>
+              <Link key={index} to={`/post/${post.slug}`}>
                 <div className="recentPost">
                   <h3>{post.blogTitle}</h3>
                   <span>{post.postedOn}</span>
                 </div>
-              </NavLink>
+              </Link>
             );
           })}
         </div>

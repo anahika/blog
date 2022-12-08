@@ -1,14 +1,14 @@
 .cardcss {
   word-wrap: normal;
-  min-width: 180px;
+  width: -moz-available;
+  max-height: 20%;
   margin: 0 10px 40px 10px;
   transition: all 0.3s ease-in-out;
   height: 90%;
-  width: auto;
 }
 
 .cardcss:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 a.custom-card,
@@ -23,12 +23,4 @@ a.custom-card:hover {
 
 .card-text {
   color: black;
-}
-
-.card-img-div {
-  height: 200px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  margin: auto;
 }

@@ -6,6 +6,7 @@ const post = require("../models/post");
 const Featured_post_counter = 4;
 
 exports.createPost = async (req, res) => {
+    console.log(req.body)
     const { title, content, meta, slug, tags, author, featured } = req.body;
     const { file } = req;
     const isAlreadyExits = await Post.findOne({ slug });

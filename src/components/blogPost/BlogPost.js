@@ -1,50 +1,42 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./BlogPost.css";
 import Card from "../ui";
-import blogPost from "../../data/blog.json";
 import Layout from "../layout/Layout";
+import { useParams } from "react-router-dom";
+import { Error } from "../pages/Error";
+import { Loading } from "../pages/Loading";
 
 const BlogPost = (props) => {
-  const [post, setPost] = useState({
-    id: "",
-    blogCategory: "",
-    blogTitle: "",
-    postedOn: "",
-    author: "",
-    blogImage: "",
-    blogText: "",
-  });
+  const params = useParams();
+  const slug = params.slug;
 
-  useEffect(() => {
-    const id = props.match.params.id;
-    const post = blogPost.data.find((post) => post.slug === id);
-    setPost(post);
-  }, [post, props.match.params.id]);
+  const post = props.blogs.find((post) => post.slug === slug);
 
-  if (post.blogImage === "") return null;
+  if (props.loading === true) return <Loading />;
+  else if (post) {
+    return (
+      <Layout blogs={props.blogs}>
+        <Card>
+          <div className="blogHeader">
+            <span className="blogCategory">{post.blogCategory}</span>
+            <h1 className="postTitle">{post.blogTitle}</h1>
+            <span className="postedBy">
+              posted on {post.postedOn} by {post.author}
+            </span>
+          </div>
 
-  return (
-    <Layout>
-      <Card>
-        <div className="blogHeader">
-          <span className="blogCategory">{post.blogCategory}</span>
-          <h1 className="postTitle">{post.blogTitle}</h1>
-          <span className="postedBy">
-            posted on {post.postedOn} by {post.author}
-          </span>
-        </div>
+          <div className="postImageContainer">
+            <img src={post.blogImage} alt="Post" />
+          </div>
 
-        <div className="postImageContainer">
-          <img src={"/blogPostImages/" + post.blogImage} alt="Post" />
-        </div>
-
-        <div className="postContent">
-          <h3>{post.blogTitle}</h3>
-          <p>{post.blogText}</p>
-        </div>
-      </Card>
-    </Layout>
-  );
+          <div className="postContent">
+            <h3>{post.blogTitle}</h3>
+            <p>{post.blogText}</p>
+          </div>
+        </Card>
+      </Layout>
+    );
+  } else return <Error />;
 };
 
 export default BlogPost;

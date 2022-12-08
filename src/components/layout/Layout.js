@@ -5,15 +5,15 @@ import Footer from "../Footer/Footer";
 
 const Layout = (props) => {
   return (
-    <React.Fragment>
-      <div className="container">
+    <>
+      <div className="layout-div">
         <div className="maindiv">{props.children}</div>
         <div className="sidebar">
-          <Sidebar />
+          <Sidebar blogs={props.blogs} />
         </div>
       </div>
       <Footer />
-    </React.Fragment>
+    </>
   );
 };
 

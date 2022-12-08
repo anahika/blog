@@ -6,7 +6,7 @@ import Layout from "../../components/layout/Layout";
 import "./ContactUs.css";
 import Carousal from "../../components/carousal/Carousel";
 
-const ContactUs = () => {
+const ContactUs = (props) => {
   const {
     register,
     handleSubmit,
@@ -55,7 +55,7 @@ const ContactUs = () => {
   };
 
   return (
-    <Layout>
+    <Layout blogs={props.blogs}>
       <div>
         <div className="div1">
           <h1 className="text-center m-3">Contact us</h1>

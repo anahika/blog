@@ -8,7 +8,10 @@ const RecentPosts = (props) => {
     <div style={props.style}>
       <Card style={{ marginBottom: "20px", paddingBottom: "20px" }}>
         <div className="postImageWrapper">
-          <img src="/blogPostImages/ronaldo.jpg" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/blog-e5e5f.appspot.com/o/ronaldo.jpg?alt=media&token=af85daeb-bab5-420a-a061-d5c7fcce8bfe"
+            alt=""
+          />
         </div>
 
         <div className="mt-3" style={{ textAlign: "center" }}>

@@ -6,7 +6,7 @@ import Carousal from "../../components/carousal/Carousel";
 
 const Home = (props) => {
   return (
-    <Layout>
+    <Layout blogs={props.blogs}>
       <div>
         <RecentPosts />
         <Carousal />
