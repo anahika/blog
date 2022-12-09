@@ -1,5 +1,5 @@
 import { database } from "../database/config";
-import { ref, set, get, child, getDatabase } from "firebase/database";
+import { ref, set, get, child, getDatabase, remove } from "firebase/database";
 
 export function startAddingBlog(blog) {
   return (dispatch) => {
@@ -27,6 +27,18 @@ export function startLoadingBlogs() {
   };
 }
 
+export function startDeletingBlog(id) {
+  return (dispatch) => {
+    return remove(ref(database, "blogs/" + id))
+      .then(() => {
+        dispatch(deleteBlog(id));
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+}
+
 export function addBlog(blog) {
   return {
     type: "ADD_BLOG",
@@ -38,5 +50,12 @@ export function loadBlogs(blogs) {
   return {
     type: "LOAD_BLOGS",
     blogs,
+  };
+}
+
+export function deleteBlog(id) {
+  return {
+    type: "DELETE_BLOG",
+    id,
   };
 }

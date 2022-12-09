@@ -43,7 +43,9 @@ function App(props) {
           <Route
             exact
             path="/post/:slug"
-            element={<BlogPost blogs={props.blogs} loading={loading} />}
+            element={
+              <BlogPost blogs={props.blogs} loading={loading} {...props} />
+            }
           />
 
           <Route exact path="/about-us" element={<AboutUS />} />
