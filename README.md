@@ -14,7 +14,7 @@ A website where anyone can write and edit blogs, having features like dashboard,
 </div>
 
 ## Web Link
-[https://thenomadicgaddi.herokuapp.com/](https://thenomadicgaddi.herokuapp.com/)
+[https://blog-e5e5f.web.app/](https://blog-e5e5f.web.app/)
 
 ## How to Install and Run the Project
 To get you started you can simply clone the repository:
