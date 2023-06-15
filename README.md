@@ -1,6 +1,6 @@
 <h1 align="center">The Nomadic Blogs</h1>
 
-A website where anyone can write and edit blogs, having features like dashboard, comments and custom image for each blog. Built with clean and structured code, using React.Js, Bootstrap and hosted on Firebase. Uses Redux to handle data and state management.
+A website where I have added my blogs and custom image for each blog. Built with clean and structured code, using React.Js, Bootstrap and hosted on Firebase. Uses Redux to handle data and state management.
 
 <div align="center">
     
