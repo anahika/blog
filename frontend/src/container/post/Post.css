@@ -1,0 +1,26 @@
+.cardcss {
+  word-wrap: normal;
+  width: -moz-available;
+  max-height: 20%;
+  margin: 0 10px 40px 10px;
+  transition: all 0.3s ease-in-out;
+  height: 90%;
+}
+
+.cardcss:hover {
+  transform: scale(1.02);
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: indianred;
+  text-decoration: none;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: black;
+}
