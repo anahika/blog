@@ -28,7 +28,7 @@ function App(props) {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <Router basename="/blog/frontend">
+    <Router>
       <div className="App">
         <Header />
         <Hero />
