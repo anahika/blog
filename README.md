@@ -14,7 +14,7 @@ A website where I have added my blogs and custom image for each blog. Built with
 </div>
 
 ## Web Link
-[https://blog-e5e5f.web.app/](https://blog-e5e5f.web.app/)
+[https://nomadic-blogs-b5245.web.app/](https://nomadic-blogs-b5245.web.app/)
 
 ## How to Install and Run the Project
 To get you started you can simply clone the repository:
